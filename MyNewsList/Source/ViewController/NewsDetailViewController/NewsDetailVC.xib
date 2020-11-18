@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailVC" customModule="Assignment" customModuleProvider="target">
+            <connections>
+                <outlet property="imgView" destination="RjV-fl-n7I" id="NwD-Fn-ojO"/>
+                <outlet property="lblDescription" destination="Gzj-xc-aRf" id="Tpq-Sy-Cv2"/>
+                <outlet property="lblSectionWithDate" destination="dFy-iS-pmD" id="9sI-8Q-bbq"/>
+                <outlet property="lblTitle" destination="LVY-ff-aLr" id="d1u-rv-NPJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-fl-n7I">
+                    <rect key="frame" x="0.0" y="44" width="414" height="233"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RjV-fl-n7I" secondAttribute="height" multiplier="16:9" id="ehO-9J-bDh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World | Asia Pacific | 2020-11-15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFy-iS-pmD">
+                    <rect key="frame" x="15" y="297" width="384" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Her Abuse Was a 'Family Matters', Until It Went Live" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVY-ff-aLr">
+                    <rect key="frame" x="15" y="343" width="384" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzj-xc-aRf">
+                    <rect key="frame" x="15" y="404" width="384" height="61"/>
+                    <string key="text">The grisly death of a farmer, whose attack was streamed online, has shocked China, With many asking  why the legal system failed to protech her.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dFy-iS-pmD" secondAttribute="trailing" constant="15" id="4Y2-nx-7NQ"/>
+                <constraint firstItem="dFy-iS-pmD" firstAttribute="top" secondItem="RjV-fl-n7I" secondAttribute="bottom" constant="20" id="C0g-Db-Sg2"/>
+                <constraint firstItem="Gzj-xc-aRf" firstAttribute="top" secondItem="LVY-ff-aLr" secondAttribute="bottom" constant="20" id="Cxx-yG-xNg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LVY-ff-aLr" secondAttribute="trailing" constant="15" id="IAk-gk-phA"/>
+                <constraint firstItem="RjV-fl-n7I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="M5C-Nq-m60"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RjV-fl-n7I" secondAttribute="trailing" id="TJH-GH-1RO"/>
+                <constraint firstItem="dFy-iS-pmD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="YPV-Na-owA"/>
+                <constraint firstItem="RjV-fl-n7I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cTQ-LQ-HlK"/>
+                <constraint firstItem="LVY-ff-aLr" firstAttribute="top" secondItem="dFy-iS-pmD" secondAttribute="bottom" constant="25" id="fvc-xz-TLI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Gzj-xc-aRf" secondAttribute="bottom" constant="15" id="jKP-t3-ORg"/>
+                <constraint firstItem="Gzj-xc-aRf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="pDM-tK-ghi"/>
+                <constraint firstItem="LVY-ff-aLr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="yfg-ec-EnB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gzj-xc-aRf" secondAttribute="trailing" constant="15" id="ytt-cK-7kt"/>
+            </constraints>
+            <point key="canvasLocation" x="54" y="77"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
